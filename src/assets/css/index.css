@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 600px;
+  border: solid 1px #000;
+  padding: 20px;
+}
+
+.game__wrap h1 {
+  margin: 0 0 10px;
+}
+.game__wrap-line {
+  display: flex;
+}
+.game__wrap-line .txt {
+  width: 100px;
+}
+.game__wrap-line.time {
+  margin: 5px 0;
+}
+.game__wrap button {
+  padding: 0 30px;
+}
+.game__wrap-area {
+  border: solid 1px #000;
+  height: 500px;
+  margin-top: 10px;
+}
+.game__wrap-area .cir {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+.game__wrap-area .cir:hover {
+  background: #d32929;
+}/*# sourceMappingURL=index.css.map */
