@@ -11,6 +11,12 @@
     &__wrap{
         h1{
             margin: 0 0 10px;
+            .win{
+                color: green;
+            }
+            .fail{
+                color: red;
+            }
         }
         &-line{
             display: flex;
@@ -28,9 +34,11 @@
             border: solid 1px #000;
             height: 500px;
             margin-top: 10px;
+            position: relative;
+            z-index: 2;
             .cir{
-                width: 30px;
-                height: 30px;
+                width: 50px;
+                height: 50px;
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
@@ -38,8 +46,14 @@
                 border: solid 1px #000;
                 font-weight: bold;
                 cursor: pointer;
-                &:hover{
+                position: absolute;
+                left: var(--x);
+                top: var(--y);
+                background: #fff;
+                &.active{
+                    transition: .5s ease-in;
                     background: #d32929;
+                    pointer-events: none;
                 }
             }
         }
